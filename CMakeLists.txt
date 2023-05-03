@@ -1,13 +1,13 @@
 cmake_minimum_required(VERSION 3.11)
 project(skeleton)
 
-set(NLOHMANNJSON_INCLUDE  ${CMAKE_CURRENT_LIST_DIR}/3part/nlohmann_json/include)
-set(SPDLOG_INCLUDE        ${CMAKE_CURRENT_LIST_DIR}/3part/spdlog/include)
-set(SPDLOG_LIB            ${CMAKE_CURRENT_LIST_DIR}/3part/spdlog/lib)
-set(BENCHMARK_INCLUDE     ${CMAKE_CURRENT_LIST_DIR}/3part/benchmark/include)
-set(BENCHMARK_LIB         ${CMAKE_CURRENT_LIST_DIR}/3part/benchmark/lib)
-set(GOOGLETEST_INCLUDE    ${CMAKE_CURRENT_LIST_DIR}/3part/googletest/include)
-set(GOOGLETEST_LIB        ${CMAKE_CURRENT_LIST_DIR}/3part/googletest/lib)
+set(NLOHMANNJSON_INCLUDE  ${CMAKE_CURRENT_LIST_DIR}/third_party/nlohmann_json/include)
+set(SPDLOG_INCLUDE        ${CMAKE_CURRENT_LIST_DIR}/third_party/spdlog/include)
+set(SPDLOG_LIB            ${CMAKE_CURRENT_LIST_DIR}/third_party/spdlog/lib)
+set(BENCHMARK_INCLUDE     ${CMAKE_CURRENT_LIST_DIR}/third_party/benchmark/include)
+set(BENCHMARK_LIB         ${CMAKE_CURRENT_LIST_DIR}/third_party/benchmark/lib)
+set(GOOGLETEST_INCLUDE    ${CMAKE_CURRENT_LIST_DIR}/third_party/googletest/include)
+set(GOOGLETEST_LIB        ${CMAKE_CURRENT_LIST_DIR}/third_party/googletest/lib)
 link_directories(
     ${GOOGLETEST_LIB}
     ${BENCHMARK_LIB}
