@@ -4,15 +4,28 @@ this code base use googletest for unit testing, and benchmark for benchmark tesi
 
 
 
-## Build Archieture
+## Build Architecture
 - x86_64
 
 ## Build Compiler
+- g++(GCC) 12.2.1
+- cmake 3.26.3
+- make  4.4.1
+
 
 ## Requirements
 - googletest
 - benchmark
+- spdlog
+- nlohmann/json
 
+
+## Build
+```bash
+cmake -H. -Bbuild
+cmake --build build
+```
+after build succeed, all application binaries will be put at *./bin*
 
 ## Running App
 ```
