@@ -17,7 +17,6 @@ this code base use googletest for unit testing, and benchmark for benchmark tesi
 ## Running App
 ```
 cd bin && ./app
-
 ```
 
 
