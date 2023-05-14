@@ -29,6 +29,9 @@ include_directories(
 add_executable(app ${app_src_files})
 add_subdirectory(benchmark)
 add_subdirectory(test)
+find_program(MEMORYCHECK_COMMAND NAMES valgrind)
+set(MEMORYCHECK_COMMAND_OPTIONS  "--trace-children=yes --leak-check=full")
+include(CTest)
 enable_testing()
 add_test(
     NAME  app_test
